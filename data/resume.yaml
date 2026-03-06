@@ -1,0 +1,182 @@
+produits:
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Spécialité Laitière Fraise PERLE DE LAIT
+  prix: 4.90 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts Fraise LA LAITIERE
+  prix: 3.90 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts fraise bifidus ACTIVIA
+  prix: 3.70 € / KG
+  prix_kg: null
+  note: '4.6'
+  avis: '774'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts Onctueux Framboises Fraises LA FERMIERE
+  prix: 6.00 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts fraise Bio CARREFOUR BIO
+  prix: 3.18 € / KG
+  prix_kg: null
+  note: '4.4'
+  avis: '5'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourt le mixé Fraise cassis MAMIE NOVA
+  prix: 3.09 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts à boire fraise banane ACTIMEL
+  prix: 3.55 € / KG
+  prix_kg: null
+  note: '4.59'
+  avis: '778'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts fraise CAZAUBON
+  prix: 3.80 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts fraise ETREZ
+  prix: 3.98 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts fraise YOGOURMAND
+  prix: 3.33 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts fraise brassé
+  prix: 5.10 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts abricot fraise CARREFOUR CLASSIC'
+  prix: 5.46 € / KG
+  prix_kg: null
+  note: '4.43'
+  avis: '14'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourt Crémeux sur lit de Fraise BONNE MAMAN
+  prix: 4.72 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts fraise KER RONAN
+  prix: 5.30 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts fraise de Dordogne PECHALOU
+  prix: 5.30 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts Fraise Brassé KER RONAN
+  prix: 7.93 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts fraises myrtilles REFLETS DE FRANCE
+  prix: 3.92 € / KG
+  prix_kg: null
+  note: '4.48'
+  avis: '223'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourt brassé fraise YOPLAIT
+  prix: 3.05 € / KG
+  prix_kg: null
+  note: null
+  avis: '1'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourt fraise Bio INVITATION A LA FERME
+  prix: 6.38 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts fraise protéiné 0% MG HIPRO
+  prix: 7.34 € / KG
+  prix_kg: null
+  note: '4.38'
+  avis: '284'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts Aromatisés Fraise COEUR DE FERMIER
+  prix: 4.78 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts gourmand fraise MAMIE NOVA
+  prix: 4.97 € / KG
+  prix_kg: null
+  note: null
+  avis: '1'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourt lait entier fraise mixées Bio CARREFOUR BIO
+  prix: 3.30 € / KG
+  prix_kg: null
+  note: '4.36'
+  avis: '238'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: 'Yaourts Bio aux fruits brassés : abricot,myrtille,mangue,fraise LES 300 &
+    BIO'
+  prix: 3.51 € / KG
+  prix_kg: null
+  note: null
+  avis: '1'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourt Grands filous Fraise YOPLAIT
+  prix: 4.98 € / KG
+  prix_kg: null
+  note: '4.45'
+  avis: '1954'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts fraise allégé 0% MG LIGHT&FREE
+  prix: 3.78 € / KG
+  prix_kg: null
+  note: null
+  avis: '1'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts bio aromatisé fraise LA TOURETTE
+  prix: 4.88 € / KG
+  prix_kg: null
+  note: null
+  avis: null
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts enfant Fraise Billes Chocolat SMARTIES
+  prix: 5.31 € / KG
+  prix_kg: null
+  note: '4.5'
+  avis: '2'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts Vanille Citron Coco Fraise CARREFOUR ORIGINAL
+  prix: 2.95 € / KG
+  prix_kg: null
+  note: '4.54'
+  avis: '13'
+- lieu: Carrefour Express Brest Victor Eusen
+  nom: Yaourts aux fruits brasssé fraise framboise pêche abricot VELOUTE FRUIX
+  prix: 2.00 € / KG
+  prix_kg: null
+  note: null
+  avis: null
