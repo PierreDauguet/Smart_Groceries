@@ -1,18 +1,23 @@
 [project]
-name = "scraper-carrefour"
+name = "web-scrapping"
 version = "0.1.0"
-description = "Scraper de produits Carrefour avec Playwright et export YAML"
-authors = [
-    {name = "Pierre Dauguet"}
-]
-readme = "README.md"
+description = "Scraper Carrefour"
+authors = [{name="Pierre Dauguet"}]
 requires-python = ">=3.10"
 
 dependencies = [
-    "playwright>=1.40",
-    "PyYAML>=6.0"
+    "playwright==1.58.0",
+    "PyYAML==6.0.3",
+    "pyee==13.0.1",
+    "greenlet==3.3.2",
+    "typing_extensions==4.15.0"
 ]
 
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["code*"]
+exclude = ["data*"]
