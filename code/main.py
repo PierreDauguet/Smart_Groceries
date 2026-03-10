@@ -4,10 +4,41 @@ import yaml
 import os
 import re
 
-MAGASIN = "Carrefour Express Brest Victor Eusen"
+LATITUDE = 48.8566
+LONGITUDE = 2.3522
 
 
-def scrape_carrefour(produit):
+def extract_infos(text):
+
+    prix = None
+    prix_kg = None
+    reduction = None
+    quantite = None
+
+    # prix au kg
+    match_kg = re.search(r"(\d+[,.]\d+)\s*€\s*/\s*kg", text.lower())
+    if match_kg:
+        prix_kg = match_kg.group(1).replace(",", ".") + " € / KG"
+
+    # prix normal
+    match_price = re.search(r"(\d+[,.]\d+)\s*€(?!\s*/)", text)
+    if match_price:
+        prix = match_price.group(1).replace(",", ".") + " €"
+
+    # réduction (ex: -20%)
+    match_reduc = re.search(r"-\s*\d+\s*%", text)
+    if match_reduc:
+        reduction = match_reduc.group(0).replace(" ", "")
+
+    # quantité (ex: 4x125g, 500g, 1kg, 1L)
+    match_qte = re.search(r"\d+\s?[xX]\s?\d+\s?(g|kg|ml|l)|\d+\s?(g|kg|ml|l)", text.lower())
+    if match_qte:
+        quantite = match_qte.group(0)
+
+    return prix, prix_kg, reduction, quantite
+
+
+def scrape_carrefour(produit, lat, lon):
 
     query = urllib.parse.quote(produit)
     url = f"https://www.carrefour.fr/s?q={query}&sort=price_asc"
@@ -17,8 +48,13 @@ def scrape_carrefour(produit):
     with sync_playwright() as p:
 
         browser = p.chromium.launch(headless=False)
-        page = browser.new_page()
 
+        context = browser.new_context(
+            geolocation={"latitude": lat, "longitude": lon},
+            permissions=["geolocation"]
+        )
+
+        page = context.new_page()
         page.goto(url)
 
         try:
@@ -28,6 +64,8 @@ def scrape_carrefour(produit):
 
         page.wait_for_load_state("networkidle")
 
+        magasin = "Carrefour le plus proche"
+
         cartes = page.locator("article").all()
 
         for c in cartes:
@@ -35,26 +73,22 @@ def scrape_carrefour(produit):
             nom = None
             prix = None
             prix_kg = None
+            reduction = None
+            quantite = None
             note = None
             avis = None
 
-            # nom
             if c.locator("h3").count() > 0:
-                nom = c.locator("h3").first.inner_text()
+                nom = c.locator("h3").first.inner_text().strip()
 
-            # prix et prix/kg
-            spans = c.locator("span").all()
+            texte = c.inner_text()
 
-            for s in spans:
+            p, pk, r, q = extract_infos(texte)
 
-                texte = s.inner_text()
-
-                if "€" in texte:
-
-                    if "/KG" in texte or "/kg" in texte:
-                        prix_kg = texte
-                    else:
-                        prix = texte
+            prix = p
+            prix_kg = pk
+            reduction = r
+            quantite = q
 
             # note et avis
             aria = c.locator("[aria-label]").all()
@@ -77,10 +111,12 @@ def scrape_carrefour(produit):
             if nom:
 
                 resultats.append({
-                    "lieu": MAGASIN,
+                    "lieu": magasin,
                     "nom": nom,
+                    "quantite": quantite,
                     "prix": prix,
                     "prix_kg": prix_kg,
+                    "reduction": reduction,
                     "note": note,
                     "avis": avis
                 })
@@ -105,5 +141,10 @@ def save_yaml(data):
 
 if __name__ == "__main__":
 
-    produits = scrape_carrefour("yaourt fraise")
+    produits = scrape_carrefour(
+        "glace pistache",
+        LATITUDE,
+        LONGITUDE
+    )
+
     save_yaml(produits)
