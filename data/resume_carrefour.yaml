@@ -1,0 +1,362 @@
+produits:
+- lieu: Carrefour le plus proche
+  nom: Yaourt à boire multi-fruits ACTIMEL
+  quantite: 8x100g
+  prix: null
+  prix_kg: 4.49 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt à boire nature 0% MG ACTIMEL
+  quantite: 8x100g
+  prix: null
+  prix_kg: 4.24 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt à boire nature 0% MG ACTIMEL
+  quantite: 12x100g
+  prix: null
+  prix_kg: 4.16 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt à boire nature ACTIMEL
+  quantite: 12x100g
+  prix: null
+  prix_kg: 3.58 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt à boire fraise ACTIMEL
+  quantite: 12x100g
+  prix: null
+  prix_kg: 3.62 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt aux fruits mixés fraise DANONE VELOUTE
+  quantite: 4x125g
+  prix: null
+  prix_kg: 3.78 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt lait entier fraise mixées Bio CARREFOUR BIO
+  quantite: null
+  prix: null
+  prix_kg: 3.30 € / KG
+  reduction: -10%
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt aux fruits mixés fraise framboise DANONE VELOUTE
+  quantite: 8x125g
+  prix: null
+  prix_kg: 2.75 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Fromage blanc aux fruits fraise banane framboise abricot pêche/abricot DANONINO
+  quantite: null
+  prix: null
+  prix_kg: 4.15 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt à boire aux fruits pêche abricot fraise banane DANONINO
+  quantite: 6x100g
+  prix: null
+  prix_kg: 4.82 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts aux fruits rouges brassé fraise abricot DANONE VELOUTE FRUIX
+  quantite: 8x125g
+  prix: null
+  prix_kg: 2.62 € / KG
+  reduction: -60%
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts aux fruits bifidus fraise ACTIVIA
+  quantite: 4x125g
+  prix: null
+  prix_kg: 3.90 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt aux fruits fraise framboise PANIER DE YOPLAIT
+  quantite: 4x125g
+  prix: null
+  prix_kg: 3.98 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts enfant Fraise Billes Chocolat SMARTIES
+  quantite: 4x120g
+  prix: null
+  prix_kg: 5.31 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts à la Grecque sur lit de Fraise YAOS
+  quantite: 125g
+  prix: null
+  prix_kg: 4.78 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts fraise allégé 0% MG LIGHT&FREE
+  quantite: 4x125g
+  prix: null
+  prix_kg: 3.78 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts gourmand fraise MAMIE NOVA
+  quantite: null
+  prix: null
+  prix_kg: 4.97 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts citron bifidus ACTIVIA
+  quantite: 4x125g
+  prix: null
+  prix_kg: 3.30 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt à la Grecque Nature DANONE
+  quantite: 4x110g
+  prix: 1,89 €
+  prix_kg: 3.00 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt aux fruits mixés fraise framboise DANONE VELOUTE
+  quantite: 8x125g
+  prix: null
+  prix_kg: 2.75 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts fraise Bio CARREFOUR BIO
+  quantite: null
+  prix: null
+  prix_kg: 3.18 € / KG
+  reduction: -10%
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt Crémeux sur lit de Fraise BONNE MAMAN
+  quantite: null
+  prix: 1,69 €
+  prix_kg: 4.72 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt aux fruits rouges fraise framboise cerise PANIER DE YOPLAIT
+  quantite: 8x125g
+  prix: null
+  prix_kg: 2.75 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt à Boire Aromatisé Fraise Mini Yop YOPLAIT
+  quantite: 8x100g
+  prix: null
+  prix_kg: 2.99 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Petits suisses aromatisé aux fruits fraise banane framboise pêche fruits rouges
+    abricot Pat' Patrouille YOPLAIT
+  quantite: 12x50g
+  prix: null
+  prix_kg: 3.08 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts à boire saveur fraise CARREFOUR SENSATION
+  quantite: null
+  prix: 1,96 €
+  prix_kg: 2.56 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Fromage blanc aux fruits framboise abricot fraise DANONINO
+  quantite: null
+  prix: null
+  prix_kg: 5.97 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Fromage blanc aux fruits framboise abricot fraise DANONINO
+  quantite: null
+  prix: null
+  prix_kg: 5.97 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts à la Grecque Morceaux de Fraise YAOS
+  quantite: 125g
+  prix: null
+  prix_kg: 4.78 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Fromage blanc aux fruits fraise banane framboise abricot pêche/abricot DANONINO
+  quantite: null
+  prix: null
+  prix_kg: 4.15 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt à Boire Aromatisé Fraise P'tit Yop YOPLAIT
+  quantite: 6x180g
+  prix: null
+  prix_kg: 2.58 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Spécialité Laitière Fraise PERLE DE LAIT
+  quantite: 125g
+  prix: null
+  prix_kg: 4.90 € / KG
+  reduction: -60%
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts à la Grecque sur lit de Fraise CARREFOUR EXTRA
+  quantite: 4x150g
+  prix: null
+  prix_kg: 3.65 € / KG
+  reduction: -15%
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts coco bifidus ACTIVIA
+  quantite: 4x125g
+  prix: null
+  prix_kg: 3.38 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt aux fruits rouges fraise framboise cerise 0% MG PANIER DE YOPLAIT
+  quantite: 8x125g
+  prix: null
+  prix_kg: 2.95 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourts fraise KER RONAN
+  quantite: null
+  prix: null
+  prix_kg: 5.30 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt à boire fraise ACTIMEL
+  quantite: 12x100g
+  prix: null
+  prix_kg: 3.62 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Fromage blanc aux fruits framboise abricot fraise DANONINO
+  quantite: null
+  prix: null
+  prix_kg: 4.98 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt aux fruits mixés fraise framboise pêche abricot DANONE VELOUTE
+  quantite: 12x125g
+  prix: null
+  prix_kg: 2.59 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt enfant à boire petit-suisse aromatisé fraise PETITS FILOUS
+  quantite: 6x100g
+  prix: null
+  prix_kg: 4.98 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt aux fruits abricot pêche fraise framboise PANIER DE YOPLAIT
+  quantite: 16x125g
+  prix: null
+  prix_kg: 2.32 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Yaourt aux fruits mixés fraise framboise pêche abricot DANONE VELOUTE
+  quantite: 16x125g
+  prix: null
+  prix_kg: 2.30 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Barre protéinée avec vitamines chocolat noisettes FULFIL
+  quantite: null
+  prix: 2,89 €
+  prix_kg: 34.73 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Barre protéinée avec vitamine chocolat et peanut butter FULFIL
+  quantite: null
+  prix: 2,89 €
+  prix_kg: 34.73 € / KG
+  reduction: null
+  note: null
+  avis: null
+- lieu: Carrefour le plus proche
+  nom: Barre protéinée avec vitamines chocolat et caramel salé FULFIL
+  quantite: 55g
+  prix: 2,89 €
+  prix_kg: 34.73 € / KG
+  reduction: null
+  note: null
+  avis: null
