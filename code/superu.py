@@ -1,6 +1,7 @@
 from playwright.sync_api import sync_playwright
 import urllib.parse
 import re
+import time
 
 
 def extract_infos(text):
@@ -9,18 +10,20 @@ def extract_infos(text):
     prix_kg = None
     quantite = None
 
-    # prix au kg
-    match_kg = re.search(r"(\d+[,.]\d+)\s*€\s*/\s*kg", text.lower())
+    text = text.replace("\n", " ").lower()
+
+    match_kg = re.search(r"(\d+[,.]\d+)\s*€\s*/\s*(kg|l)", text)
     if match_kg:
         prix_kg = match_kg.group(1).replace(",", ".") + " € / KG"
 
-    # prix produit
-    match_price = re.search(r"(\d+[,.]\d+)\s*€(?!\s*/)", text)
-    if match_price:
-        prix = match_price.group(1).replace(",", ".") + " €"
+    matchs = re.findall(r"(\d+[,.]\d+)\s*€", text)
+    if matchs:
+        prix = matchs[0].replace(",", ".") + " €"
 
-    # quantité
-    match_qte = re.search(r"\d+\s?[xX]\s?\d+\s?(g|kg|ml|l)|\d+\s?(g|kg|ml|l)", text.lower())
+    match_qte = re.search(
+        r"(\d+\s?[xX]\s?\d+\s?(g|kg|ml|l))|(\d+\s?(g|kg|ml|l))",
+        text
+    )
     if match_qte:
         quantite = match_qte.group(0)
 
@@ -31,47 +34,57 @@ def scrape_superu(produit):
 
     query = urllib.parse.quote(produit)
 
-    # URL de recherche directe
-    url = f"https://www.coursesu.com/recherche?text={query}"
+    # 🔥 URL CORRIGÉE
+    url = f"https://www.coursesu.com/s?q={query}"
 
     resultats = []
 
     with sync_playwright() as p:
 
-        browser = p.chromium.launch(headless=False)
-
-        context = browser.new_context(
-            user_agent="Mozilla/5.0",
+        context = p.chromium.launch_persistent_context(
+            user_data_dir="user_data_superu",
+            headless=False,
             locale="fr-FR",
-            viewport={"width": 1280, "height": 900}
+            viewport={"width": 1280, "height": 900},
+            user_agent="Mozilla/5.0"
         )
+
+        context.add_init_script("""
+        Object.defineProperty(navigator, 'webdriver', {
+            get: () => undefined
+        })
+        """)
 
         page = context.new_page()
 
+        time.sleep(2)
         page.goto(url, wait_until="domcontentloaded", timeout=60000)
 
-        # accepter cookies si popup
         try:
-            page.click("button:has-text('Accepter')", timeout=3000)
+            page.click("button:has-text('Accepter')", timeout=4000)
         except:
             pass
 
-        # attendre que les produits chargent
         page.wait_for_timeout(5000)
 
-        # scroll pour lazy loading
-        for _ in range(5):
-            page.mouse.wheel(0, 4000)
-            page.wait_for_timeout(1200)
+        for _ in range(6):
+            page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
+            time.sleep(1.5)
+
+        # 🔥 ATTENTE PRODUITS
+        try:
+            page.wait_for_selector("article", timeout=10000)
+        except:
+            print("⚠️ Aucun produit trouvé (mauvaise page)")
+            context.close()
+            return []
 
         produits = page.locator("article")
-
         count = produits.count()
 
         for i in range(count):
 
             try:
-
                 bloc = produits.nth(i)
 
                 nom = bloc.locator("h3").inner_text()
@@ -80,7 +93,12 @@ def scrape_superu(produit):
 
                 prix, prix_kg, quantite = extract_infos(texte)
 
-                # ignorer blocs vides
+                if prix is None:
+                    try:
+                        prix = bloc.locator("[class*=price]").first.inner_text()
+                    except:
+                        pass
+
                 if prix is None and prix_kg is None:
                     continue
 
@@ -96,8 +114,17 @@ def scrape_superu(produit):
                 })
 
             except:
-                pass
+                continue
 
-        browser.close()
+        context.close()
 
     return resultats
+
+
+# TEST
+if __name__ == "__main__":
+
+    produits = scrape_superu("yaourt fraise")
+
+    for p in produits[:10]:
+        print(p)

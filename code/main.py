@@ -31,20 +31,20 @@ def main():
 
     print()
 
-    # Super U
-    print("Scraping Super U...")
-    produits_superu = scrape_superu(produit)
-
-    print("Produits Super U trouvés :", len(produits_superu))
-
-    save_yaml(
-        produits_superu,
-        "../data/resume_superu.yaml"
-    )
-
-    print()
-    print("Exports YAML terminés")
-
+    # # Super U
+    # print("Scraping Super U...")
+    # produits_superu = scrape_superu(produit)
+    #
+    # print("Produits Super U trouvés :", len(produits_superu))
+    #
+    # save_yaml(
+    #     produits_superu,
+    #     "../data/resume_superu.yaml"
+    # )
+    #
+    # print()
+    # print("Exports YAML terminés")
+    #
 
 if __name__ == "__main__":
     main()
